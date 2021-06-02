@@ -1,1 +1,54 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+  margin: 0 auto;
+}
+.cardgeneral {
+  background-color: white;
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  position: relative;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.pinta:after {
+  font-weight: bold;
+  font-size: 100px;
+}
+#rotate {
+  transform: rotate(180deg);
+}
+#valor {
+  font-size: 80px;
+  display: flex;
+}
+
+.spade,
+.spade:after {
+  content: "♠";
+  color: black;
+}
+
+.heart,
+.heart:after {
+  content: "♥";
+  color: red;
+}
+
+.club,
+.club:after {
+  content: "♣";
+  color: black;
+}
+
+.diamond,
+.diamond:after {
+  content: "♦";
+  color: red;
+}
